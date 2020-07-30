@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD34D"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:shadowColor="#ff0000"
+        android:shadowDx="5"
+        android:shadowDy="2"
+        android:shadowRadius="7"
+        android:text="Array of integers"
+        android:textColor="#FF9E0F"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#B3FF5C"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv0"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="1"
+            android:padding="5dp"
+            android:textColor="#0E0E0E" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="2"
+            android:padding="5dp"
+            android:textColor="#0E0E0E" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="3"
+            android:padding="5dp"
+            android:textColor="#0E0E0E" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="4"
+            android:padding="5dp"
+            android:textColor="#0E0E0E" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="5"
+            android:padding="5dp"
+            android:textColor="#0E0E0E" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="6"
+            android:padding="5dp"
+            android:textColor="#0E0E0E" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="7"
+            android:padding="5dp"
+            android:textColor="#0E0E0E" />
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="8"
+            android:padding="5dp"
+            android:textColor="#0E0E0E" />
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="9"
+            android:padding="5dp"
+            android:textColor="#0E0E0E" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:shadowColor="#007167"
+        android:shadowDx="5"
+        android:shadowDy="2"
+        android:shadowRadius="7"
+        android:text="Enter the cell number (1..9)"
+        android:textColor="#A6DF65"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter here"
+        android:inputType="number"
+        android:maxLength="1" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#FF7042"
+        android:padding="5dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="#B3FF5C"
+                android:onClick="fillArray"
+                android:text="Fill \nthe array"
+                android:textAllCaps="false"
+                android:textColor="#FF7042"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="#B3FF5C"
+                android:onClick="changePlaceRight"
+                android:text="Swap value to the right"
+                android:textAllCaps="false"
+                android:textColor="#FF7042"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="#B3FF5C"
+                android:onClick="changePlaceLeft"
+                android:text="Swap value to the left"
+                android:textAllCaps="false"
+                android:textColor="#FF7042"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="#B3FF5C"
+                android:onClick="reverseReplacement"
+                android:text="Reverse replacement"
+                android:textAllCaps="false"
+                android:textColor="#FF7042"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="#B3FF5C"
+                android:onClick="swapFirstCell"
+                android:text="Swap value with 1st cell"
+                android:textAllCaps="false"
+                android:textColor="#FF7042"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="#B3FF5C"
+                android:onClick="swapLastCell"
+                android:text="Swap value with last cell"
+                android:textAllCaps="false"
+                android:textColor="#FF7042"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
